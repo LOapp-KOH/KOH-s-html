@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>p268</title>
+        <style>
+            .italy{
+                font-style:italic;
+            }
+            .bb{
+                font-weight:bold;
+            }
+            .listyle{
+                list-style:decimal;
+            }
+            table{
+                caption-side:top;
+                border-collapse:collapse;
+                border: 1px solid lightgray;
+                text-align:center;
+                width:50%;
+            }
+            th,td{
+                border:1px solid lightgray;
+                padding:auto;
+            }
+            .left{
+                text-align:left;
+            }
+            #box1{
+                width:50%;
+                margin:20px auto;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                border:1px solid black;
+                padding:20px;
+            }
+            #box2{
+                width:50%;
+                margin:20px auto;
+                border:1px solid black;
+                padding:20px;
+            }
+            #box3{
+                width:50%;
+                margin:20px auto;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border:1px solid black;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <h1>레드향</h1>
+            <p>껍질에 붉은 빛이 돌아 <span class="bb">레드향</span>이라 불린다.</p>
+            <p>레드향은 <span class="italy">한라봉과 귤을 교배한</span> 것으로
+            <br>일반 귤보다 2~3배 크다.</p>
+        </div>
+        <div id="box2">
+            <h1>레드향 샐러드 레시비</h1>
+            <p><strong>재료 : </strong>레드향 1개</p>
+            <ol>
+                <li>샐러드 채소를 씻고</li>
+                <li>레드향과 아보카도</li>
+            </ol>
+            
+        </div>
+        <div id="box3">
+            <h1>상품 구성</h1>
+            <table>
+                <caption>선물용과 가정용</caption>
+                <tr>
+                    <th>용도</th>
+                    <th>중량</th>
+                    <th>개수</th>
+                    <th>가격</th>
+                </tr>
+                <tr>
+                    <th  rowspan="2">선물용</th>
+                    <td>3kg</td>
+                    <td class="left">11</td>
+                    <td>35999</td>
+                </tr>
+                <tr>
+                    <td>5kg</td>
+                    <td class="left">11</td>
+                    <td>35999</td>
+                </tr>
+
+            </table>
+        </div>
+    </body>
+</html>
