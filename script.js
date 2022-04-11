@@ -1,9 +1,10 @@
-var num=prompt("팩토리얼 숫자 입력하세요");
-var res=1;
-document.write(num+"! = ");
-while(num>0)
+var num=prompt("숫자 입력하세요");
+var i=1;
+
+while(i<num)
 {
-    res*=num;
-    num--;
+    document.write(i+", ")
+    i*=3;
 }
-document.write(res);
+res=num/3;
+document.write("<p id="emp">"+"num+"까지 3의 배수의 개수 : "+res+"</p>);
