@@ -20,12 +20,48 @@
         <title>hello</title>
         <link rel="stylesheet" href="style.css">
         <style>
-            
+            ul{
+                list-style:none;
+            }
+            li{
+                display:inline-block;
+                border:1px solid gray;
+                padding:10px 50px;
+
+
+            }
+            .dcolor{
+                background-color:white;
+                width:700PX;
+                height:100px;
+                border: 1px solid gray;
+                border-radius:10px;
+            }
         </style>
         
     </head>
     <body>
-        <h1></h1>
-        <script src="script.js"></script>
+        <ul class="list">
+            <li><a href="#" onclick="changeBg('green')">Green</a></li>
+            <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+            <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+        </ul>
+        <div class="dcolor" id="result">    
+            
+        </div>
+        <hr>
+        <hr>
+        <buttion id="change">글자색 바꾸기</buttion>
+        <p>hellohihihih</p>
+
+        <script>
+            function changeBg(color){
+                var result=document.querySelector('#result');
+                result.style.backgroundColor=color;
+            }
+            
+            var changebtn=document.querySelector("#change");
+            
+        </script>
     </body>
 </html>
